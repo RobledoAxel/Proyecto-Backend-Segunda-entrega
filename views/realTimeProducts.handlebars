@@ -1,0 +1,23 @@
+<h1>Listado de productos</h1> --}}
+
+<p>{{productos.title}}</p>
+
+<p>{{productos.price}}</p>
+
+<img src={{mainImage.path}}>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+
+<div>
+  {{#each productos.thumbnails}}
+    <img src={{this.path}}>
+  {{/each}}
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/chat.js"></script>

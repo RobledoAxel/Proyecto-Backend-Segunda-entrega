@@ -1,0 +1,54 @@
+<div class="contenedor">
+  <h1>Carga un Producto.</h1>
+
+  <form id="contenedor-form" action="/api/products" method="post" enctype="multipart/form-data">
+  <div class="input">
+    <label >Titulo:</label>
+    <input type="text" name="title">
+  </div>
+
+  <div class="input">
+    <label >Descripcion</label>
+    <input type="text" name="description">
+  </div>
+  
+  <div class="input" >
+    <label >Codigo:</label>
+    <input type="number" tname="code">
+  </div>
+
+  <div class="input" >
+    <label >Stock:</label>
+    <input type="number" name="stock">
+  </div>
+
+  <div class="input">
+    <label >Precio:</label>
+    <input type="number" name="price">
+  </div>
+
+  <div class="input">
+    <label >Categoria</label>
+    <input type="text" name="category">
+  </div>
+
+  <div class="input" >
+    <label >image</label>
+    <input type="file" name="thumbnail" multiple>
+  </div>
+    
+  <div class="input-button">
+      <button type="submit" id="button-submit">Enviar</button>
+      <button type="reset" id="button-reset">eliminar</button>
+  </div>
+
+  </form>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/RealTimeProducts.js"></script>
+
+
+
+
+
